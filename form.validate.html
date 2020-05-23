@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- CSS externo próprio -->
+	  <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+	    
+    <!-- Insira a Título da página aqui-->
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+  </head>
+
+  <body class="bg-secondary">
+    <div class="bg-light container mt-sm-1 rounded" style="width: 60rem;"> 
+        <h4>Para se cadastrar, preencha os campos abaixo:</h4>
+        
+        <form id="formulario">
+            <div class="form-row">
+                <div class="form-group col-sm">
+                <label for="nome">Nome</label>
+                <input type="nome" class="form-control" name="nome" id="nome" placeholder="Nome"/>
+                </div>
+            </div>
+            <div class="form-row">
+            <div class="form-group col-sm-8">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email"/>
+            </div>
+            <div class="form-group col-sm-4">
+                <label for="telefone">Telefone</label>
+                <input type="phone" class="form-control" name="telefone" id="telefone" placeholder="Telefone"/>
+            </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="cpf">CPF</label>
+                    <input type="text" class="form-control" name= "cpf" id="cpf" placeholder="CPF"/>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="nasc">Data de Nascimento</label>
+                    <input type="text" class="form-control" name="nasc" id="nasc" placeholder="Data Nascimento"/>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-8">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" class="form-control" name="endereco" id="endereco" placeholder="Rua XXXXX, nº 0"/>
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form-control" name="cep" id="cep" placeholder="CEP"/>
+                </div>
+            </div>
+            <div class="form-row">
+            <div class="form-group col-sm-8">
+                <label for="cidade">Cidade</label>
+                <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Cidade"/>
+            </div>
+            
+
+            <div class="form-group col-ms-4">
+                <label for="estado">Estado</label>
+                <select name="estado" id="estado" class="form-control">
+                    <option selected value="0">Escolher...</option>
+                    <option value="1">Acre</option>
+                    <option value="2">Alagoas</option>
+                    <option value="3">Amapá</option>
+                    <option value="4">Amazonas </option>
+                    <option value="5">Bahia</option>
+                    <option value="6">Ceará</option>
+                    <option value="7">Distrito Federal</option>
+                    <option value="8">Espirito Santo</option>
+                    <option value="9">Goiás</option>
+                    <option value="10">Maranhão</option>
+                    <option value="11">Mota Grosso</option>
+                    <option value="12">Mato Grosso do Sul</option>
+                    <option value="13">Minas Gerais</option>
+                    <option value="14">Pará</option>
+                    <option value="15">Paraíba</option>
+                    <option value="16">Paraná</option>
+                    <option value="17">Pernambuco</option>
+                    <option value="18">Piauí</option>
+                    <option value="19">Rio de Janeiro</option>
+                    <option value="20">Rio Grande do Norte</option>
+                    <option value="21">Rio Grande do Sul</option>
+                    <option value="22">Rondônia</option>
+                    <option value="23">Roraima</option>
+                    <option value="24">Santa Catarina</option>
+                    <option value="25">São Paulo</option>  
+                    <option value="26">Sergipe</option>
+                    <option value="27">Tocantins</option>
+                </select>
+            </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="check" id="gridCheck"/>
+                    <label class="form-check-label" for="gridCheck">
+                    Eu aceito os termos de uso.
+                    </label>
+                </div>
+                </div>
+            </div>
+        
+            <div class="form-row pb-sm-2">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Biblioteca JQuery -->
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <!-- Plugin Validate para JQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+            
+    <!-- Plugin Mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <!-- Trabalhando com script proprio -->
+    <script type="text/javascript" src="js/script.js"></script>
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
